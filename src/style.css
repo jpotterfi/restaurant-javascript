@@ -1,0 +1,168 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+
+#content {
+    background-image: url(./images/small-cafe-reba-spike.jpg);
+}
+
+*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: "header" 7vh
+                   "headerTwo" 50px
+                   "navBar" 50px
+                   "contentBox" 1fr
+                   "footer" 30px
+                   /1fr;
+    background-image: url(./images/large-cat.jpg);
+    background-size:cover;
+    
+}
+
+#header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 7vh;
+}
+
+#headerTwo {
+    grid-area: headerTwo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: 'Manrope';
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#navBar{
+    grid-area: navBar;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Manrope';
+    background-color: #ffffff;
+    border-top: 2px solid black;
+    
+}
+
+button {
+        background: white;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        border-radius: 16px;
+        padding: .5rem 1rem;
+        margin: 0;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: black;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#homeContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Manrope';
+    width: 35vw;
+    line-height: 1.25;
+    padding: 10px;
+    font-weight: 900;
+    font-size: calc(25px + 2vw);
+    margin-right: 300px;
+}
+
+#contentBox {
+    grid-area: contentBox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope';
+    background-color: white;
+}
