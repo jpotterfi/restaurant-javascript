@@ -74,5 +74,5 @@ function pageLoad(){
 
 export {
     pageLoad,
-    clearPage
+    clearContentBox
 }

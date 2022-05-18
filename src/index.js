@@ -1,5 +1,6 @@
 import './style.css';
 import {pageLoad, clearContentBox} from "./pageload";
+import {cafeCats, createCatBioBox} from "./catspage";
 
 let content = document.getElementById("content");
 
@@ -8,8 +9,9 @@ pageLoad();
 
 let homepageButton = document.getElementById("homepageButton");
 homepageButton.addEventListener("click", function(){
-console.log("homepage");
-clearContentBox();
+    console.log("homepage");
+    clearContentBox();
+    createCatBioBox(cafeCats);
 });
 
 let menupageButton = document.getElementById("menupageButton");
