@@ -1,17 +1,22 @@
 import './style.css';
+import leo from './images/leo.png';
+import lofi from './images/lofi.png';
+import penelope from './images/penelope.png';
+import brutus from './images/brutus.png';
+import sandiego from './images/sandiego.png';
 import {pageLoad, clearContentBox} from "./pageload";
-import {cafeCats, createCatBioBox} from "./catspage";
+import {cats, createCatBioBox} from "./catspage";
 
 let content = document.getElementById("content");
 
 pageLoad();
 
 
+
 let homepageButton = document.getElementById("homepageButton");
 homepageButton.addEventListener("click", function(){
     console.log("homepage");
-    clearContentBox();
-    createCatBioBox(cafeCats);
+    
 });
 
 let menupageButton = document.getElementById("menupageButton");
@@ -22,6 +27,8 @@ console.log("menupage");
 let catspageButton = document.getElementById("catspageButton");
 catspageButton.addEventListener("click", function(){
 console.log("catspage");
+    clearContentBox();
+    createCatBioBox(cats);
 });
 
 let contactButton = document.getElementById("contactpageButton");
