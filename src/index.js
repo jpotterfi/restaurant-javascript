@@ -6,6 +6,7 @@ import brutus from './images/brutus.png';
 import sandiego from './images/sandiego.png';
 import {pageLoad, clearContentBox} from "./pageload";
 import {cats, createCatBioBox} from "./catspage";
+import {createHomeContent} from "./homepage";
 
 let content = document.getElementById("content");
 
@@ -16,7 +17,8 @@ pageLoad();
 let homepageButton = document.getElementById("homepageButton");
 homepageButton.addEventListener("click", function(){
     console.log("homepage");
-    
+    clearContentBox();
+    createHomeContent();
 });
 
 let menupageButton = document.getElementById("menupageButton");
