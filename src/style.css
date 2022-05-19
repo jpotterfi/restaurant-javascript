@@ -149,13 +149,13 @@ button:active {
 #homeContent {
     display: flex;
     font-size: 50px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Manrope';
     width: 35vw;
     line-height: 1.25;
     padding: 75px;
     font-weight: 900;
-    font-size: calc(50px + 2vw);
+    font-size: calc(75px + 2vw);
     margin-right: auto;
     margin-top: auto;
     font-weight: 900;
@@ -181,7 +181,7 @@ button:active {
     color: white;
     max-width: 60%;
     min-width: 60%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     border-radius: 100px;
     padding: 32px;
     gap: 100px;
@@ -207,4 +207,63 @@ button:active {
 .catImage{
     height: 10vh;
     
+}
+
+/*****************menu page*******************/
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 32px;
+    max-width: 75%;
+    min-width: 75%;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 1.5vh;
+    gap: 16px;
+    margin: auto;
+}
+
+#drinksBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+#foodBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#coffeeHeading, #teaHeading, #foodHeading {
+    font-size: (25px + 1.5vh);
+    font-weight: 900;
+    text-decoration: underline;
+    
+}
+
+.food {
+    font-weight: 700;
+}
+
+.drink {
+    font-weight: 500;
+}
+
+#drinkPrices, .foodPrice {
+    font-weight: 100;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
 }

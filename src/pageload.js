@@ -30,18 +30,17 @@ function createNavBar(){
     let catspage = document.createElement("button");
     catspage.id = "catspageButton";
 
-    let contactpage = document.createElement("button");
-    contactpage.id = "contactpageButton";
+    
 
     homepage.innerHTML = "home";
     menupage.innerHTML = "menu";
     catspage.innerHTML = "cats";
-    contactpage.innerHTML = "contact";
+    
 
     navBar.appendChild(homepage);
     navBar.appendChild(menupage);
     navBar.appendChild(catspage);
-    navBar.appendChild(contactpage);
+    
 
     content.appendChild(navBar);
 }
@@ -60,8 +59,12 @@ function createHomepage() {
 
 function createFooter(){
     let footer = document.createElement("footer");
+    let a = document.createElement('a');
+    a.setAttribute('href', "https://unsplash.com/photos/OjB_lkGKhX8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink");
+    a.innerHTML = "Background image: Reba Spike"
     footer.id = "footer";
-    footer.innerHTML = "I am a footer";
+    footer.innerHTML = "Created for The Odin Project by Jeremy Potterfield.";
+    footer.appendChild (a);
     content.appendChild(footer);
 }
 

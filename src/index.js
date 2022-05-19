@@ -7,10 +7,12 @@ import sandiego from './images/sandiego.png';
 import {pageLoad, clearContentBox} from "./pageload";
 import {cats, createCatBioBox} from "./catspage";
 import {createHomeContent} from "./homepage";
+import {coffeeArray, teaArray, foodArray, createMenu} from './menupage';
 
 let content = document.getElementById("content");
 
 pageLoad();
+
 
 
 
@@ -24,6 +26,8 @@ homepageButton.addEventListener("click", function(){
 let menupageButton = document.getElementById("menupageButton");
 menupageButton.addEventListener("click", function(){
 console.log("menupage");
+clearContentBox();
+createMenu(coffeeArray, teaArray, foodArray);
 });
 
 let catspageButton = document.getElementById("catspageButton");
@@ -33,10 +37,7 @@ console.log("catspage");
     createCatBioBox(cats);
 });
 
-let contactButton = document.getElementById("contactpageButton");
-contactButton.addEventListener("click", function(){
-console.log("contactpage");
-});
+
 
 //on button click, load new content into content box
 
